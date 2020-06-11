@@ -2,7 +2,7 @@
 
 > Practice exercise for clean code course students
 >
-> -- by [bitAdemy](https://www.bitademy.com)
+> -- by [Alberto Basalo](https://twitter.com/albertobasalo)
 
 ## Start
 
@@ -148,14 +148,11 @@ module.exports = {
 
 ## Credits
 
-### [Clean Code course](https://www.bitademy.com/cursos/clean-code-aplicado-para-desarrollos-limpios-y-rentables/)
+### [Clean Code course](https://trainingit.es//curso-clean-code?promo=bitAdemy)
 
 Based on its demos and Laboratories.
 
 [Course documentation in Spanish ](https://github.com/BitAdemy/CleanCode)
 
-[Course labs](https://github.com/LabsAdemy/CleanCodeLab)
+[Course labs](https://github.com/cleancodeTrIT/CleanCodeLab)
 
-[![bit_ademy](./src/assets/bit_ademy.png)](https://bitademy.com)
-
-> by [bitAdemy](https://bitademy.com)
