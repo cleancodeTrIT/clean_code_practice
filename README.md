@@ -17,7 +17,7 @@ yarn
 
 ## Your Task
 
-Refactor `./src/main.ts`, so at the end you could remove the es-lint rules disabling
+Refactor `./src/main.ts`, so at the end you could remove the disabled es-lint rules
 
 ```ts
 /* eslint-disable complexity */
@@ -26,6 +26,12 @@ Refactor `./src/main.ts`, so at the end you could remove the es-lint rules disab
 /* eslint-disable no-magic-numbers */
 /* eslint-disable max-nested-callbacks */
 ```
+
+Follow clean principles:
+
+- Good names
+- Small functions
+- Solid clases
 
 ### Scripts :
 
