@@ -21,7 +21,7 @@ function init(): boolean {
     });
     res.on('end', () => {
       const bodyData = JSON.parse(body);
-      const rockets = bodyData.launches;
+      const rockets = bodyData.results;
       let alarm = null;
       for (let i = 0; i < 5; i++) {
         const date = new Date(rockets[i].net);
