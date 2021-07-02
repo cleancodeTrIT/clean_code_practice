@@ -13,7 +13,7 @@ import * as https from 'https';
 
 function init(): boolean {
   console.log('App ready');
-  https.get('https://launchlibrary.net/1.4/launch/next/' + 5, res => {
+  https.get('https://lldev.thespacedevs.com/2.0.0/launch/upcoming/?mode=list&limit=' + 5, res => {
     res.setEncoding('utf8');
     let body = '';
     res.on('data', data => {
