@@ -7,7 +7,7 @@ export { init };
 import * as https from 'https';
 
 // FEATURE:     Get a report of the next 5 rocket launches
-// As a:        space
+// As a:        space explorer
 // I want to:   see the status of the next launches
 // In order to: set an alarma for the next one
 

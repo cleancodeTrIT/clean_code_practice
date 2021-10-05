@@ -47,13 +47,11 @@ yarn test # excute tests
 
 ## Recommended VS Code Extensions
 
-- **Material Icon Theme** pkief.material-icon-theme
+- **Material Icon Theme** [pkief.material-icon-theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
-- **Night Owl** sdras.night-owl
+- **Prettier** - Code formatter [esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-- **Prettier** - Code formatter esbenp.prettier-vscode
-
-- **Spell Right** ban.spellright
+- **Spell Right** [ban.spellright](https://marketplace.visualstudio.com/items?itemName=ban.spellright)
 
 ## Preconfigured tools:
 

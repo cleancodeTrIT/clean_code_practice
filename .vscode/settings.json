@@ -1,45 +1,78 @@
 {
-  "eslint.validate": ["javascript", "typescript"],
-  "workbench.colorCustomizations": {
-    "editorError.foreground": "#907080",
-    "editorWarning.foreground": "#708090",
-    "activityBar.background": "#1f6fd0",
-    "activityBar.activeBorder": "#ee90bb",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#ee90bb",
-    "activityBarBadge.foreground": "#15202b",
-    "titleBar.activeBackground": "#1857a4",
-    "titleBar.inactiveBackground": "#1857a499",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveForeground": "#e7e7e799",
-    "statusBar.background": "#1857a4",
-    "statusBarItem.hoverBackground": "#1f6fd0",
-    "statusBar.foreground": "#e7e7e7",
-    "activityBar.activeBackground": "#1f6fd0",
-    "statusBar.border": "#1857a4",
-    "titleBar.border": "#1857a4"
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "peacock.color": "#1857a4",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Night Owl",
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true,
-  "prettier.useEditorConfig": true,
-  "prettier.disableLanguages": ["vue", "xlf", "xml"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "html.format.wrapAttributes": "force-aligned",
-  "html.format.enable": true,
-  "html.format.wrapLineLength": 80,
-  "spellright.language": [
-    "en",
-    "es"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.organizeImports",
+    "source.fixAll",
+    "source.fixAll.eslint"
   ],
-  "spellright.documentTypes": [
-    "markdown",
-    "latex",
-    "plaintext",
-    "html",
-    "typescript"
-  ]
+  "eslint.rules.customizations": [
+    {
+      "rule": "*",
+      "severity": "warn"
+    }
+  ],
+  "eslint.validate": ["javascript", "typescript"],
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/env/**": true,
+    "**/venv/**": true,
+    "env-*": true
+  },
+  "html.format.wrapAttributes": "force-aligned",
+  "material-icon-theme.files.associations": {
+    "*.controller.ts": "json",
+    "*.domain.ts": "mathematica",
+    "*.interceptor.ts": "angular-guard",
+    "*.repository.ts": "database",
+    "**.routing.module.ts": "routing",
+    "**.store.ts": "angular-directive",
+    "store.ts": "angular-directive"
+  },
+  "material-icon-theme.folders.associations": {
+    "domain": "class",
+    "login": "secure",
+    "transactions": "pipe",
+    "ui": "components",
+    "users": "secure"
+  },
+  "search.exclude": {
+    "node_modules/": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/env": true,
+    "**/venv": true
+  },
+  "spellright.documentTypes": ["markdown", "latex", "plaintext", "typescript"],
+  "spellright.ignoreFiles": [
+    "**/.gitignore",
+    "**/.spellignore",
+    "/node_modules/",
+    "/dist/",
+    "/tmp/"
+  ],
+  "spellright.language": ["en", "es"],
+  "typescript.preferences.includePackageJsonAutoImports": "on"
 }
