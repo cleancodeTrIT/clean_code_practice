@@ -4,26 +4,19 @@
   "description": "Practice exercise for clean code course students",
   "author": {
     "name": "Alberto Basalo",
-    "email": "learn@bitademy.com",
-    "url": "https://twitter.com/bit_ademy"
+    "email": "albertobasalo@hotmail.com.com",
+    "url": "https://twitter.com/añbertobasalo"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LabsAdemy/CleanCodePractice/issues"
+    "url": "https://github.com/cleancodeTrIT/clean_code_practice/issues"
   },
-  "homepage": "https://github.com/LabsAdemy/CleanCodePractice#readme",
+  "homepage": "https://github.com/cleancodeTrIT/clean_code_practice#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LabsAdemy/CleanCodePractice.git"
+    "url": "git+https://github.com/cleancodeTrIT/clean_code_practice.git"
   },
-  "keywords": [
-    "JS",
-    "TypeScript",
-    "Prettier",
-    "Jest",
-    "Seed",
-    "Template"
-  ],
+  "keywords": ["JS", "TypeScript", "Prettier", "Jest", "Seed", "Template"],
   "main": "main.js",
   "scripts": {
     "start": "ts-node ./src/main",
