@@ -152,7 +152,7 @@ module.exports = {
 
 ## Credits
 
-### [Clean Code course](https://trainingit.es//curso-clean-code?promo=bitAdemy)
+### [Clean Code course](https://www.trainingit.es/index.php/producto/curso-clean-code/)
 
 Based on its demos and Laboratories.
 
