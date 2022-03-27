@@ -1,6 +1,6 @@
 # clean_code_practice
 
-> Practice exercise for clean code course students
+> Practice exercise for students of the clean code course
 >
 > -- by [Alberto Basalo](https://twitter.com/albertobasalo)
 
@@ -45,13 +45,14 @@ yarn start # run de application on localhost
 yarn test # excute tests
 ```
 
-## Recommended VS Code Extensions
+### 🧩 Extensions recommendations
 
-- **Material Icon Theme** [pkief.material-icon-theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-
-- **Prettier** - Code formatter [esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-- **Spell Right** [ban.spellright](https://marketplace.visualstudio.com/items?itemName=ban.spellright)
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+- [EsLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+- [Prettier](https://github.com/prettier/prettier-vscode)
+- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 ## Preconfigured tools:
 
@@ -61,18 +62,16 @@ yarn test # excute tests
 
 ```json
 {
-  "printWidth": 100,
-  "semi": true,
-  "singleQuote": true,
-  "trailingComma": "es5",
+  "arrowParens": "always",
   "bracketSpacing": true,
-  "jsxBracketSameLine": true,
-  "arrowParens": "avoid",
-  "rangeStart": 0,
-  "rangeEnd": 10000,
-  "requirePragma": false,
-  "insertPragma": false,
-  "proseWrap": "preserve"
+  "htmlWhitespaceSensitivity": "ignore",
+  "printWidth": 120,
+  "proseWrap": "preserve",
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false
 }
 ```
 
@@ -87,26 +86,9 @@ charset = utf-8
 
 ### EsLint
 
-`.eslintrc`
+See `.eslintrc` file
 
-```json
-"rules": {
-    "complexity": ["error", { "max": 8 }],
-    "max-depth": ["error", 2],
-    "max-lines": ["warn", 160],
-    "max-lines-per-function": ["warn", 20],
-    "max-nested-callbacks": ["error", 1],
-    "max-params": ["warn", 2],
-    "no-magic-numbers": [
-      "warn",
-      { "detectObjects": false, "enforceConst": true, "ignore": [1], "ignoreArrayIndexes": true }
-    ],
-    "no-multiple-empty-lines": ["warn", { "max": 2, "maxEOF": 1 }],
-    "no-nested-ternary": "error",
-    "no-unused-vars": ["warn"],
-    "@typescript-eslint/no-use-before-define": "off"
-},
-```
+
 
 ### Jest
 
@@ -154,9 +136,16 @@ module.exports = {
 
 ### [Clean Code course](https://www.trainingit.es/index.php/producto/curso-clean-code/)
 
-Based on its demos and Laboratories.
+Based on these theory and demos
 
-[Course documentation in Spanish ](https://github.com/BitAdemy/CleanCode)
+[Course documentation _in Spanish_](https://github.com/cleancodeTrIT/CleanCodeLab)
 
-[Course labs](https://github.com/cleancodeTrIT/CleanCodeLab)
 
+---
+
+<footer>
+  <h3>By Alberto Basalo</h3>
+  <p>
+   <a href="https://twitter.com/albertobasalo" target="blank"><img src="https://img.shields.io/twitter/follow/albertobasalo?logo=twitter&style=for-the-badge" alt="albertobasalo" /></a>
+  </p>
+</footer>
