@@ -4,7 +4,7 @@
 /* eslint-disable no-magic-numbers */
 /* eslint-disable max-nested-callbacks */
 export { init };
-import * as https from 'https';
+import * as https from "https";
 
 // FEATURE:     Get a report of the next 5 rocket launches
 // As a:        space explorer
@@ -12,56 +12,56 @@ import * as https from 'https';
 // In order to: set an alarma for the next one
 
 function init(): boolean {
-  console.log('App ready');
-  https.get('https://lldev.thespacedevs.com/2.0.0/launch/upcoming/?mode=list&limit=' + 5, res => {
-    res.setEncoding('utf8');
-    let body = '';
-    res.on('data', data => {
+  console.log("App ready");
+  https.get("https://lldev.thespacedevs.com/2.0.0/launch/upcoming/?mode=list&limit=" + 5, (res) => {
+    res.setEncoding("utf8");
+    let body = "";
+    res.on("data", (data) => {
       body += data;
     });
-    res.on('end', () => {
+    res.on("end", () => {
       const bodyData = JSON.parse(body);
       const rockets = bodyData.results;
       let alarm = null;
       for (let i = 0; i < 5; i++) {
         const date = new Date(rockets[i].net);
-        if (rockets[i].status === 1) {
+        if (rockets[i].status.id === 2) {
           if (alarm === null) {
-            const falta = date.getTime() - new Date('2020-06-13 05:00:00').getTime();
+            const falta = date.getTime() - new Date().getTime();
             switch (true) {
               case falta < 1000 * 60 * 60:
                 alarm =
-                  'Alerta, próximo despegue en ' +
+                  "Alerta, próximo despegue en " +
                   Math.floor(falta / 1000 / 60) +
-                  (Math.floor(falta / 1000 / 60) === 1 ? ' minuto' : ' minutos');
-                ' minutos';
+                  (Math.floor(falta / 1000 / 60) === 1 ? " minuto" : " minutos");
+                " minutos";
                 break;
               case falta < 1000 * 60 * 60 * 24:
                 alarm =
-                  'Atención, próximo despegue en ' +
+                  "Atención, próximo despegue en " +
                   Math.floor(falta / 1000 / 60 / 60) +
-                  (Math.floor(falta / 1000 / 60 / 60) === 1 ? ' hora' : ' horas');
+                  (Math.floor(falta / 1000 / 60 / 60) === 1 ? " hora" : " horas");
                 break;
               case falta < 1000 * 60 * 60 * 24 * 7:
                 alarm =
-                  'Relax, próximo despegue en ' +
+                  "Relax, próximo despegue en " +
                   Math.floor(falta / 1000 / 60 / 60 / 24) +
-                  (Math.floor(falta / 1000 / 60 / 60 / 24) === 1 ? ' día' : ' días');
+                  (Math.floor(falta / 1000 / 60 / 60 / 24) === 1 ? " día" : " días");
                 break;
               default:
                 alarm =
-                  'Aburrimiento, próximo despegue en ' +
+                  "Aburrimiento, próximo despegue en " +
                   Math.floor(falta / 1000 / 60 / 60 / 24 / 7) +
-                  (Math.floor(falta / 1000 / 60 / 60 / 24 / 7) === 1 ? ' semana' : ' semanas');
+                  (Math.floor(falta / 1000 / 60 / 60 / 24 / 7) === 1 ? " semana" : " semanas");
                 break;
             }
           }
-          console.log('✅ ' + date.toLocaleString() + ' - ' + rockets[i].name);
+          console.log("✅ " + date.toLocaleString() + " - " + rockets[i].name);
         } else {
-          console.log('❌ ' + date.toLocaleString() + ' - ' + rockets[i].name);
+          console.log("❌ " + date.toLocaleString() + " - " + rockets[i].name);
         }
       }
-      console.log('⏰ ' + alarm);
+      console.log("⏰ " + alarm);
     });
   });
   return true;

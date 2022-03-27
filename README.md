@@ -1,8 +1,6 @@
 # clean_code_practice
 
 > Practice exercise for students of the clean code course
->
-> -- by [Alberto Basalo](https://twitter.com/albertobasalo)
 
 ## Start
 
@@ -37,12 +35,10 @@ Follow clean principles:
 
 ```bash
 # npm
-npm start # run de application on localhost
-npm test # excute tests
+npm start
 
 # yarn
-yarn start # run de application on localhost
-yarn test # excute tests
+yarn start
 ```
 
 ### 🧩 Extensions recommendations
@@ -54,7 +50,9 @@ yarn test # excute tests
 - [Prettier](https://github.com/prettier/prettier-vscode)
 - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
-## Preconfigured tools:
+## Pre configured tools:
+
+> feel free to adapt the configuration to your needs
 
 ### Prettier
 
@@ -88,50 +86,6 @@ charset = utf-8
 
 See `.eslintrc` file
 
-
-
-### Jest
-
-`babel.config.js`
-
-```js
-module.exports = {
-  presets: [
-    [
-      '@babel/preset-env',
-      {
-        targets: {
-          node: 'current',
-        },
-      },
-      '@babel/preset-typescript',
-    ],
-  ],
-};
-```
-
-`test.config.js`
-
-```js
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-};
-```
-
-### gh-pages
-
-## Package Json scripts
-
-```json
-{
-  "scripts": {
-    "start": "ts-node ./src/main",
-    "test": "jest --watch -o",
-    "jest": "jest"
-  },
-```
-
 ## Credits
 
 ### [Clean Code course](https://www.trainingit.es/index.php/producto/curso-clean-code/)
@@ -139,7 +93,6 @@ module.exports = {
 Based on these theory and demos
 
 [Course documentation _in Spanish_](https://github.com/cleancodeTrIT/CleanCodeLab)
-
 
 ---
 
